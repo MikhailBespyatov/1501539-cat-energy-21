@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Михаил Беспятов](https://up.htmlacademy.ru/adaptive/21/user/1501539).
-* Наставник: `Николай Момотенко`.(https://htmlacademy.ru/profile/id1103389).
+* Наставник: `Николай 👌🏽 Момотенко`.(https://htmlacademy.ru/profile/id1103389).
 
 ---
 
