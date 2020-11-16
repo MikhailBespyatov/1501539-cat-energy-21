@@ -6,26 +6,28 @@
   </head>
   <body class="page-body">
     <header class="page-header">
-      <a class="page-header__logo-icon"><img src="img/header-logo.png" width="33" height="37" alt="логотип главной страницы"></a>
-      <span class="page-header__name">
-        <b>Cat</b> Energy
-      </span>
+      <a class="page-header__logo" href="#">
+        <img class="page-header__logo-icon" src="img/header-logo.png" width="33" height="37" alt="логотип главной страницы">
+        <span class="page-header__name">
+          <b>Cat</b> Energy
+        </span>
+      </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="#">
+              <a class="main-nav__link" href="#">
                 Главная
               </a>
             </li>
             <li class="main-nav__item main-nav__item--active">
-              <a href="catalog.html">
+              <a class="main-nav__link" href="catalog.html">
                 Каталог продукции
               </a>
             </li>
             <li class="main-nav__item">
-              <a href="form.html">
+              <a class="main-nav__link" href="form.html">
                 Подбор программы
               </a>
             </li>
@@ -56,6 +58,7 @@
         <div class="catalog-selection__wrapper">
           <ul class="catalog-selection__list">
             <li class="catalog-selection__item">
+              <img class="catalog-selection__img" src="img/slim.png" alt="">
               <h2 class="catalog-selection__title">
                 Похудение
               </h2>
@@ -65,6 +68,7 @@
               <a class="catalog-button" href="catalog.html">Каталог slim</a>
             </li>
             <li class="catalog-selection__item">
+              <img class="catalog-selection__img" src="img/cat-pro.png" alt="">
               <h2 class="catalog-selection__title">
                 Набор массы
               </h2>
@@ -82,16 +86,20 @@
           <h2 class="description__title">Как это работает</h2>
           <ul class="description__list">
               <li class="description__item description__item--benefit">
-                 Функциональное питание содержит только полезные питательные вещества.
+                <img class="description__img" src="img/benefit.png" alt="">
+                <span class="description__text">Функциональное питание содержит только полезные питательные вещества.</span>
               </li>
               <li class="description__item description__item--ease">
-                Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+                <img class="description__img" src="img/ease.png" alt="">
+                <span class="description__text"></span>Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</span>
               </li>
               <li class="description__item description__item--few">
-                Замените один-два приема обычной еды на наше функциональное питание.
+                <img class="description__img" src="img/few.png" alt="">
+                <span class="description__text"></span>Замените один-два приема обычной еды на наше функциональное питание.</span>
               </li>
             <li class="description__item description__item--quickly">
-                Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+              <img class="description__img" src="img/quickly.png" alt="">
+              <span class="description__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</span>
               </li>
           </ul>
         </div>
@@ -125,7 +133,7 @@
           </dl>
           <div class="live-example__price">
             <p>
-              Затраты на питание: 15 000 РУБ.
+              Затраты на питание: <span class="live-example__price-number">15000</span>  РУБ.
             </p>
           <div class="slider">
             <img class="slider__img" src="img/before-cat.png" width="311" height="232" alt="Фото кота до похудeния">
@@ -161,17 +169,17 @@
         <ul class="social__list">
           <li class="social__item">
             <a href="#">
-              VK
+              <img src="img/icon-vkontakte.svg" width="23" height="16" alt="Вконтакте">
             </a>
           </li>
           <li class="social__item">
            <a href="#">
-            instagram
+            <img src="img/icon-instagram.svg" width="16" height="16" alt="Инстаграм">
            </a>
           </li>
           <li class="social__item">
             <a href="#">
-              Fasebook
+              <img src="img/icon-fb.svg" width="22" height="22" alt="Фейсбук">
             </a>
           </li>
         </ul>
@@ -179,6 +187,7 @@
 
       <div class="copyright">
         <span class="copyright__text">HTML Academy</span>
+        <img src="img/footer-icon-copy.png" width="27" height="34" alt="Копирайт">
       </div>
 
       </footer>
