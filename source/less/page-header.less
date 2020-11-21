@@ -1,7 +1,17 @@
 @import "colors.less";
 
+.page-header__logo {
+  border-bottom: 1px solid @grey-border-2;
+}
+
 .main-nav__list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.main-nav__item {
+  border-bottom: 1px solid @grey-border-2;
 }
 
 .main-nav__link {
@@ -11,6 +21,6 @@
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
-
-  color: #000000;
+  text-decoration: none;
+  color: @black;
 }
