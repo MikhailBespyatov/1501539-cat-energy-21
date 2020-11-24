@@ -16,9 +16,24 @@
   align-items: center;
   text-transform: uppercase;
   text-decoration: none;
+
+  @media (min-width: @tablet-width) {
+    width: 244px;
+    min-height: 54px;
+
+    font-size: 20px;
+    line-height: 0px;
+  }
 }
 
-.selection-button {
+@media (min-width: @tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+
+.catalog-selection__button {
   font-family: "Oswald", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -78,7 +93,7 @@
   align-items: center;
 }
 
-.catalog-button--disabled {
+.catalog-button--grey {
   background-color: @basic-grey;
   color: @special_dark-grey;
 }
