@@ -1,5 +1,3 @@
-@import "colors.less";
-
 .choose-button {
   width: 280px;
   min-height: 40px;
@@ -20,7 +18,7 @@
   text-decoration: none;
 }
 
-.catalog-button {
+.selection-button {
   font-family: "Oswald", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -39,4 +37,48 @@
   line-height: 20px;
   text-transform: uppercase;
   color: @black;
+}
+
+.form__button {
+  width: 280px;
+  height: 40px;
+  border: none;
+  background-color: @basic-green;
+
+  font-family: "Oswald", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: @white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.catalog-button {
+  width: 280px;
+  height: 40px;
+
+  background-color: @basic-green;
+  border: none;
+
+  font-family: "Oswald", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 0px;
+  text-transform: uppercase;
+  color: @white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.catalog-button--disabled {
+  background-color: @basic-grey;
+  color: @special_dark-grey;
 }
