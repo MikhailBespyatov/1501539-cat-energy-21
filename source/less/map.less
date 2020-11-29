@@ -1,7 +1,7 @@
 .map {
   position: relative;
 
-  min-height: 482px;
+  min-height: 476px;
   width: 320px;
   margin: 0 auto;
 
@@ -31,7 +31,7 @@
   height: 114px;
 
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 
   @media (min-width: @tablet-width) {
@@ -46,6 +46,8 @@
     position: absolute;
     left: 110px;
     top: 95px;
+    padding-left: 72px;
+    padding-right: 89px;
 
     width: 570px;
     height: 201px;
@@ -53,6 +55,7 @@
 }
 
 .partnership__title {
+  width: 140px;
   font-family: "Oswald", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -60,11 +63,31 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @light-black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 21px;
+  }
 }
 
 .partnership__adress {
+  width: 140px;
   font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: @special_dark-grey;
+
+  br {
+    display: none;
+  }
+  @media (min-width: @tablet-width) {
+    width: 159px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+
+    br {
+      display: block;
+    }
+  }
 }

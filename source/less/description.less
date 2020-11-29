@@ -2,10 +2,13 @@
   width: 280px;
   padding: 0 20px;
   margin: 0 auto;
+  padding-bottom: 42px;
 
   @media (min-width: @tablet-width) {
     width: 708px;
     padding: 0 30px;
+    padding-bottom: 47px;
+    border-bottom: 1px solid @grey-border-2;
   }
 
   @media (min-width: @desktop-width) {
@@ -46,18 +49,157 @@
 }
 
 .description__title {
+  margin-top: -3px;
   font-family: "Oswald", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
   line-height: 40px;
-  text-align: center;
   color: @black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 72px;
+  }
 }
 
 .description__item {
+  position: relative;
   font-family: Arial;
   font-size: 14px;
   line-height: 18px;
   color: @special_dark-grey;
+
+  &--benefit::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 60px;
+    height: 60px;
+
+    background: url(../img/benefit.png) no-repeat 0 0;
+  }
+
+  &--ease::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 60px;
+    height: 60px;
+
+    background: url(../img/ease.png) no-repeat 0 0;
+  }
+
+  &--few::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 60px;
+    height: 60px;
+
+    background: url(../img/few.png) no-repeat 0 0;
+  }
+
+  &--quickly::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 60px;
+    height: 60px;
+
+    background: url(../img/quickly.png) no-repeat 0 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+
+    &--benefit {
+      background: url(../img/1.svg) no-repeat 118px 0;
+    }
+
+    &--ease {
+      background: url(../img/2.svg) no-repeat 111px 0;
+    }
+
+    &--few {
+      background: url(../img/3.svg) no-repeat 113px 0;
+    }
+
+    &--quickly {
+      background: url(../img/4.svg) no-repeat 113px 0;
+    }
+
+    &--benefit::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      width: 80px;
+      height: 80px;
+
+      background: @basic-green url(../img/benefit.png) no-repeat 10px 10px;
+    }
+
+    &--ease::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      width: 80px;
+      height: 80px;
+
+      background: @basic-green url(../img/ease.png) no-repeat 10px 10px;
+    }
+
+    &--few::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      width: 80px;
+      height: 80px;
+
+      background: @basic-green url(../img/few.png) no-repeat 10px 10px;
+    }
+
+    &--quickly::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      width: 80px;
+      height: 80px;
+
+      background: @basic-green url(../img/quickly.png) no-repeat 10px 10px;
+    }
+  }
+}
+
+.description__text {
+  display: block;
+  width: 198px;
+  padding-left: 80px;
+
+  @media (min-width: @tablet-width) {
+    width: 250px;
+    padding-left: 0;
+    padding-top: 110px;
+  }
 }

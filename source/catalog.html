@@ -5,25 +5,32 @@
   <meta charset="UTF-8">
   <title>Document</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
   <header class="page-header">
-    <a class="page-header__logo" href="#">
-      <img class="page-header__logo-icon" src="img/header-logo.svg" width="33" height="37"
-        alt="логотип главной страницы">
-      <img class="page-header__logo-name" src="img/header-logo-name.svg" width="101" height="18" alt="Кэт Энерджи">
-    </a>
+    <div class="page-header__logo">
+      <a class="page-header__logo--mobile" href="#">
+        <img class="page-header__logo-icon" src="img/header-logo.svg" width="33" height="37"
+          alt="логотип главной страницы">
+        <img class="page-header__logo-name" src="img/header-logo-name.svg" width="101" height="18" alt="Кэт Энерджи">
+      </a>
+      <a class="page-header__logo--tablet" href="#">
+        <img class="page-header__img-tablet" src="img/logo-tablet.svg" width="174" height="51" alt="Кэт Энерджи">
+      </a>
+      <a class="page-header_logo--desktop" href="#">
+        <img class="page-header__img-desktop" src="img/logo-desktop.svg" width="202" height="59" alt="Кэт Энерджи">
+      </a>
+    </div>
 
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--opened main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">
+            <a class="main-nav__link main-nav__link--first" href="#">
               Главная
             </a>
           </li>
@@ -40,7 +47,6 @@
         </ul>
       </div>
     </nav>
-    <div class="desktop-green-cat-wrapper"></div>
   </header>
 
   <main class="page-main">
@@ -453,6 +459,25 @@
   </div>
 </div>
 </footer>
+
+<script>
+  var navMain = document.querySelector('.main-nav');
+  var navToggle = document.querySelector('.main-nav__toggle');
+
+  navMain.classList.remove('main-nav--nojs');
+
+  navToggle.addEventListener('click', function () {
+    if (navMain.classList.contains('main-nav--closed')) {
+      navMain.classList.remove('main-nav--closed');
+      navMain.classList.add('main-nav--opened');
+    } else {
+      navMain.classList.add('main-nav--closed');
+      navMain.classList.remove('main-nav--opened');
+    }
+  });
+
+</script>
+
 </body>
 
 </html>

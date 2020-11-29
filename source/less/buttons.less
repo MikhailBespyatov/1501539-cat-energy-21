@@ -17,23 +17,36 @@
   text-transform: uppercase;
   text-decoration: none;
 
+  &:hover {
+    background-color: @basic-green-2;
+  }
+
+  &:active {
+    color: fade(@white, 30%);
+  }
+
   @media (min-width: @tablet-width) {
     width: 244px;
     min-height: 54px;
 
     font-size: 20px;
     line-height: 0px;
+
+    margin-left: 113px;
+    margin-top: 49px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 52px;
   }
 }
-
-@media (min-width: @tablet-width) {
-  .main-nav__toggle {
-    display: none;
-  }
-}
-
 
 .catalog-selection__button {
+  position: relative;
+  width: 134px;
+  height: 24px;
+  margin-left: 19px;
+
   font-family: "Oswald", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -42,6 +55,40 @@
   text-decoration: none;
   text-transform: uppercase;
   color: @black;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    right: -40px;
+
+    width: 32px;
+    height: 10px;
+
+    background: url(../img/right-arrow.svg) no-repeat 0 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 161px;
+    height: 38px;
+    padding-top: 4px;
+    margin-left: 52px;
+
+    font-size: 20px;
+    line-height: 30px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 14px;
+      right: 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 168px;
+  }
 }
 
 .button-slider {
@@ -51,7 +98,14 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  border: none;
+  background: transparent;
   color: @black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form__button {

@@ -1,25 +1,23 @@
 .action {
-  background: url(../img/action-food.png) no-repeat 0 calc(100% - 43px),
-    url(../img/action-green-back.png) no-repeat 0 0,
-    url(../img/action-cat.png) no-repeat 0 0;
+  background: url(../img/action-food.png) no-repeat 40% calc(100% - 43px),
+    url(../img/action-green-back.png) no-repeat 40% 0,
+    url(../img/action-cat.png) no-repeat 40% 0;
 
-  width: 280px;
+  min-height: 480px;
+  width: 320px;
   margin: 0 auto;
-  padding: 0 20px;
-
 
   @media (min-width: @tablet-width) {
-    height: 810px;
+    min-height: 872px;
     width: 708px;
     padding: 0 30px;
-    background: url(../img/action-background-tablet.png) no-repeat 30px 201px;
+    background: url(../img/action-background-tablet.png) no-repeat 25% 85%;
   }
 
   @media (min-width: @desktop-width) {
-    height: 583px;
-    width: 1200px;
+    width: 1220px;
     padding: 0 40px;
-    background: url(../img/action-background-desktop.png) no-repeat 480px 0;
+    background: url(../img/action-background-desktop.png) no-repeat 65% 10%;
   }
 
 }
@@ -57,6 +55,7 @@
 .action__title {
   margin: 0;
   padding: 0;
+  padding-top: 24px;
 
   font-family: "Oswald", Arial, sans-serif;
   font-style: normal;
@@ -71,18 +70,36 @@
     font-size: 60px;
     line-height: 60px;
     color: @black;
+
+    padding-left: 87px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 87px;
   }
 }
 
 .action__text {
+  padding: 0;
+  margin: 0;
   font-size: 14px;
   line-height: 14px;
+  text-align: center;
   text-transform: uppercase;
   color: @white;
+
+  padding-top: 10px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 20px;
     color: @black;
+
+    padding-top: 20px;
+    margin-left: -10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 40px;
   }
 }
