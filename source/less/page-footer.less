@@ -4,7 +4,6 @@
 }
 
 .page-footer__section {
-  padding: 0 20px;
   margin: 0 auto;
   min-height: 236px;
   box-sizing: border-box;
@@ -15,12 +14,16 @@
   justify-content: space-around;
 
   @media (min-width: @tablet-width) {
-    padding: 0 30px;
     min-height: 150px;
+    width: 708px;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
   }
 }
 
