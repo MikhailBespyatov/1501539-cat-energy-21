@@ -7,7 +7,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 1280px;
+    width: 1440px;
     margin-top: -223px;
   }
 }
@@ -30,12 +30,14 @@
   }
 
   @media (min-width: @desktop-width) {
+    width: 1220px;
     height: 374px;
-    padding: 0 40px;
+    padding: 0 110px;
     margin-bottom: 71px;
 
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -101,11 +103,6 @@
   @media (min-width: @desktop-width) {
     height: 374px;
     width: 570px;
-    margin-right: 80px;
-
-    &:last-child {
-      margin-right: 0;
-    }
 
     &--slim::before {
       content: "";

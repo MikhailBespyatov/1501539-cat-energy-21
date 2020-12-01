@@ -12,8 +12,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 1200px;
-    padding: 0 40px;
+    width: 1220px;
+    padding: 0 110px;
   }
 }
 
@@ -74,7 +74,7 @@
   line-height: 18px;
   color: @special_dark-grey;
 
-  &--benefit::before {
+  &::before {
     content: "";
     position: absolute;
     left: 0;
@@ -82,44 +82,24 @@
 
     width: 60px;
     height: 60px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
 
-    background: url(../img/benefit.png) no-repeat 0 0;
+  &--benefit::before {
+    background-image: url(../img/benefit.png);
   }
 
   &--ease::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-
-    width: 60px;
-    height: 60px;
-
-    background: url(../img/ease.png) no-repeat 0 0;
+    background-image: url(../img/ease.png);
   }
 
   &--few::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-
-    width: 60px;
-    height: 60px;
-
-    background: url(../img/few.png) no-repeat 0 0;
+     background-image: url(../img/few.png);
   }
 
   &--quickly::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-
-    width: 60px;
-    height: 60px;
-
-    background: url(../img/quickly.png) no-repeat 0 0;
+    background-image: url(../img/quickly.png);
   }
 
   @media (min-width: @tablet-width) {
@@ -142,7 +122,7 @@
       background: url(../img/4.svg) no-repeat 113px 0;
     }
 
-    &--benefit::before {
+    &::before {
       content: "";
       position: absolute;
       left: 0;
@@ -150,49 +130,35 @@
 
       width: 80px;
       height: 80px;
+      background-repeat: no-repeat;
+      background-position: 10px 10px;
+    }
 
-      background: @basic-green url(../img/benefit.png) no-repeat 10px 10px;
+    &--benefit::before {
+      background-color: @basic-green;
+      background-image: url(../img/quickly.png);
     }
 
     &--ease::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-
-      width: 80px;
-      height: 80px;
-
-      background: @basic-green url(../img/ease.png) no-repeat 10px 10px;
+      background-color: @basic-green;
+      background-image: url(../img/quickly.png);
     }
 
     &--few::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-
-      width: 80px;
-      height: 80px;
-
-      background: @basic-green url(../img/few.png) no-repeat 10px 10px;
+      background-color: @basic-green;
+      background-image: url(../img/quickly.png);
     }
 
     &--quickly::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-
-      width: 80px;
-      height: 80px;
-
-      background: @basic-green url(../img/quickly.png) no-repeat 10px 10px;
+      background-color: @basic-green;
+      background-image: url(../img/quickly.png);
     }
   }
 }
 
 .description__text {
+  padding: 0;
+  margin: 0;
   display: block;
   width: 198px;
   padding-left: 80px;

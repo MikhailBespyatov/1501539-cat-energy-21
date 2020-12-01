@@ -1,4 +1,5 @@
 .page-header {
+  position: relative;
   width: 320px;
   margin: 0 auto;
 
@@ -23,7 +24,7 @@
   }
 }
 
-.page-header__logo--mobile {
+.page-header__logo-mobile {
   width: 60%;
   display: flex;
   justify-content: space-between;
@@ -38,7 +39,7 @@
   }
 }
 
-.page-header__logo--tablet {
+.page-header__logo-tablet {
   display: none;
 
   @media (min-width: @tablet-width) {
@@ -61,7 +62,7 @@
   }
 }
 
-.page-header_logo--desktop {
+.page-header__logo-desktop {
   display: none;
 
   @media (min-width: @desktop-width) {
@@ -135,8 +136,6 @@
   }
 }
 
-
-
 .main-nav__list {
   margin: 0;
   padding: 0;
@@ -154,6 +153,23 @@
     margin-right: 40px;
   }
 
+}
+
+.main-nav__item {
+  @media (min-width: @tablet-width) {
+    &--catalog {
+      margin-right: 35px;
+    }
+    &--active {
+      border-bottom: 2px solid @basic-green;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--desktop-active {
+      border-bottom: 2px solid @white;
+    }
+  }
 }
 
 .main-nav__link {
@@ -186,40 +202,22 @@
     }
 
     &:active {
-      border-bottom: 2px solid @basic-green;
+      opacity: 0.3;
     }
 
-    &--catalog {
-      margin-right: 35px;
-    }
   }
-  }
+}
 
+@media (min-width: @desktop-width) {
+  font-size: 20px;
+  line-height: 30px;
+  padding-top: 29px;
+}
+
+
+.main-nav__link--white {
   @media (min-width: @desktop-width) {
-    font-size: 20px;
-    line-height: 30px;
-    padding-top: 29px;
-
     color: @white;
-
-    &:hover {
-      opacity: 0.6;
-    }
-
-    &:active {
-      border-bottom: 2px solid @white;
-      opacity: 1;
-    }
-  }
-
-
-.main-nav__link--black {
-  @media (min-width: @desktop-width) {
-    color: @black;
-
-    &:active {
-      border-bottom: 2px solid @basic-green;
-    }
   }
 }
 
@@ -228,5 +226,19 @@
 
   @media (min-width: @tablet-width) {
     border: none;
+  }
+}
+
+.desctop-header-background {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 720px;
+    height: 694px;
+
+    background: url(../img/green-cat-desktop.png) no-repeat 0 0,
+      url(../img/background-desktop.png) no-repeat 0 0;
+    z-index: -1;
   }
 }

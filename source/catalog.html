@@ -11,16 +11,16 @@
 
 <body class="page-body">
   <header class="page-header">
-    <div class="page-header__logo">
-      <a class="page-header__logo--mobile" href="#">
+    <div class="page-header__logo-wrapper">
+      <a class="page-header__logo-mobile" href="#">
         <img class="page-header__logo-icon" src="img/header-logo.svg" width="33" height="37"
           alt="логотип главной страницы">
         <img class="page-header__logo-name" src="img/header-logo-name.svg" width="101" height="18" alt="Кэт Энерджи">
       </a>
-      <a class="page-header__logo--tablet" href="#">
+      <a class="page-header__logo-tablet" href="#">
         <img class="page-header__img-tablet" src="img/logo-tablet.svg" width="174" height="51" alt="Кэт Энерджи">
       </a>
-      <a class="page-header_logo--desktop" href="#">
+      <a class="page-header__logo-desktop" href="#">
         <img class="page-header__img-desktop" src="img/logo-desktop.svg" width="202" height="59" alt="Кэт Энерджи">
       </a>
     </div>
@@ -30,17 +30,17 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--first main-nav__link--black" href="/">
+            <a class="main-nav__link main-nav__link--first" href="/">
               Главная
             </a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--black main-nav__link--catalog" href="catalog.html">
+          <li class="main-nav__item  main-nav__item--active main-nav__item--catalog">
+            <a class="main-nav__link" href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--black" href="form.html">
+            <a class="main-nav__link" href="form.html">
               Подбор программы
             </a>
           </li>
@@ -409,15 +409,15 @@
 
     <section class="map">
 
-      <section class="partnership">
-        <h2 class="partnership__title">
+      <div class="partnership">
+        <p class="partnership__title">
           Приглашаем к сотрудничеству дилеров!
-        </h2>
+        </p>
         <p class="partnership__adress">
           ул. Большая Конюшенная, д. 19/8 <br>
           <br>Санкт-Петербург
         </p>
-      </section>
+      </div>
 
       <h2 class="visually-hidden">Местоположение на карте</h2>
     </section>
@@ -450,10 +450,10 @@
         </div>
 
         <div class="copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="copyright__link-text" href="https://htmlacademy.ru/intensive/adaptive">
             HTML Academy
           </a>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="copyright__link-img" href="https://htmlacademy.ru/intensive/adaptive">
             <img src="img/icon-copy.png" width="27" height="34" alt="Копирайт">
           </a>
         </div>

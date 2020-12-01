@@ -1,13 +1,15 @@
 .live-example {
   background-color: @basic-background;
-  width: 100%;
+  width: 320px;
 
   @media (min-width: @tablet-width) {
+    width: 768px;
     background-color: @basic-background;
     background-image: linear-gradient(@white 53%, transparent 53%);
   }
 
   @media (min-width: @desktop-width) {
+    width: 1440px;
     background-color: @basic-background;
     background-image: linear-gradient(@white 30%, transparent 30%);
   }
@@ -28,8 +30,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 1200px;
-    padding: 0 40px;
+    width: 1220px;
+    padding: 0 110px;
     min-height: 656px;
 
     display: flex;
@@ -201,13 +203,14 @@
 
 .slider__img {
   margin-bottom: 23px;
+  margin-right: -51px;
 
   @media (min-width: @tablet-width) {
     display: none;
   }
 }
 
-.slider_buttons {
+.slider__buttons {
   width: 228px;
   height: 40px;
   margin-left: 47px;
@@ -234,7 +237,7 @@
   }
 
   &--after {
-    background: @white url(../img/toggle-green-background.svg) no-repeat calc(100% - 5px) 50%;
+    background: @white url(../img/toggle-green-background.svg) no-repeat right 5px top 50%;
   }
 
   @media (min-width: @tablet-width) {

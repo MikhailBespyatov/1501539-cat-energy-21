@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Document</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
@@ -12,16 +13,16 @@
 
 <body class="page-body">
   <header class="page-header">
-    <div class="page-header__logo">
-      <a class="page-header__logo--mobile" href="#">
+    <div class="page-header__logo-wrapper">
+      <a class="page-header__logo-mobile" href="#">
         <img class="page-header__logo-icon" src="img/header-logo.svg" width="33" height="37"
           alt="логотип главной страницы">
         <img class="page-header__logo-name" src="img/header-logo-name.svg" width="101" height="18" alt="Кэт Энерджи">
       </a>
-      <a class="page-header__logo--tablet" href="#">
+      <a class="page-header__logo-tablet" href="#">
         <img class="page-header__img-tablet" src="img/logo-tablet.svg" width="174" height="51" alt="Кэт Энерджи">
       </a>
-      <a class="page-header_logo--desktop" href="#">
+      <a class="page-header__logo-desktop" href="#">
         <img class="page-header__img-desktop" src="img/logo-desktop.svg" width="202" height="59" alt="Кэт Энерджи">
       </a>
     </div>
@@ -31,17 +32,17 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--first main-nav__link--black" href="/">
+            <a class="main-nav__link main-nav__link--first" href="/">
               Главная
             </a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--black main-nav__link--catalog" href="catalog.html">
+          <li class="main-nav__item main-nav__item--catalog">
+            <a class="main-nav__link" href="catalog.html">
               Каталог продукции
             </a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--black" href="form.html">
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link" href="form.html">
               Подбор программы
             </a>
           </li>
@@ -162,61 +163,61 @@
     </form>
   </main>
 
-    <footer class="page-footer">
+  <footer class="page-footer">
 
-      <section class="map">
+    <section class="map">
 
-        <section class="partnership">
-          <h2 class="partnership__title">
-            Приглашаем к сотрудничеству дилеров!
-          </h2>
-          <p class="partnership__adress">
-            ул. Большая Конюшенная, д. 19/8 <br>
-            <br>Санкт-Петербург
-          </p>
-        </section>
+      <div class="partnership">
+        <p class="partnership__title">
+          Приглашаем к сотрудничеству дилеров!
+        </p>
+        <p class="partnership__adress">
+          ул. Большая Конюшенная, д. 19/8 <br>
+          <br>Санкт-Петербург
+        </p>
+      </div>
 
-        <h2 class="visually-hidden">Местоположение на карте</h2>
-      </section>
+      <h2 class="visually-hidden">Местоположение на карте</h2>
+    </section>
 
-      <div class="page-footer__wrapper">
-        <div class="page-footer__section">
-          <a class="page-footer__logo" href="#">
-            <img class="page-footer_logo-img" src="img/footer-logo-2.png" width="128" height="24"
-              alt="Логотип Кэт Енерджи">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__section">
+        <a class="page-footer__logo" href="#">
+          <img class="page-footer_logo-img" src="img/footer-logo-2.png" width="128" height="24"
+            alt="Логотип Кэт Енерджи">
+        </a>
+
+        <div class="social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <img class="social__img social__img--vk" src="img/icon-vkontakte.svg" width="23" height="16" alt="Вконтакте">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <img class="social__img social__img--insta" src="img/icon-instagram.svg" width="16" height="16" alt="Инстаграмм">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <img class="social__img social__img--fb" src="img/icon-facebook.svg" width="22" height="22" alt="Фейсбук">
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="copyright">
+          <a class="copyright__link-text" href="https://htmlacademy.ru/intensive/adaptive">
+            HTML Academy
           </a>
-
-          <div class="social">
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link" href="#">
-                  <img class="social__img social__img--vk" src="img/icon-vkontakte.svg" width="23" height="16" alt="Вконтакте">
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link" href="#">
-                  <img class="social__img social__img--insta" src="img/icon-instagram.svg" width="16" height="16" alt="Инстаграмм">
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link" href="#">
-                  <img class="social__img social__img--fb" src="img/icon-facebook.svg" width="22" height="22" alt="Фейсбук">
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="copyright">
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              HTML Academy
-            </a>
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <img src="img/icon-copy.png" width="27" height="34" alt="Копирайт">
-            </a>
-          </div>
+          <a class="copyright__link-img" href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="img/icon-copy.png" width="27" height="34" alt="Копирайт">
+          </a>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
 
 
