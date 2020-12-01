@@ -31,17 +31,17 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--first" href="#">
+            <a class="main-nav__link main-nav__link--first main-nav__link--black" href="/">
               Главная
             </a>
           </li>
-          <li class="main-nav__item main-nav__item--active">
-            <a class="main-nav__link" href="catalog.html">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--black main-nav__link--catalog" href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">
+            <a class="main-nav__link main-nav__link--black" href="form.html">
               Подбор программы
             </a>
           </li>
@@ -53,6 +53,7 @@
   <main class="page-main">
     <h1 class="visually-hidden">Подбор программы для вашего кота</h1>
     <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+      <div class="selectiom-program__wrapper">
       <fieldset class="selection-program">
         <legend class="selection-program__legend">
           Подбор программы
@@ -60,17 +61,17 @@
         <p class="selection-program__action">
           Заполните анкету, и мы подберем программу питания для вашего кота
         </p>
-        <div class="selection-program__name">
-          <label class="form__label" for="name">Имя:*</label>
-          <input class="form__input" type="text" id="name" name="name">
+        <div class="selection-program__item">
+          <label class="form__label form__label--name" for="name">Имя:*</label>
+          <input class="form__input" type="text" id="name" name="name" placeholder="БАРСИК">
         </div>
-        <div class="selection-program__weight">
-          <label class="form__label" for="weight">Вес (кг):*</label>
-          <input class="form__input" id="weight" name="weight">
+        <div class="selection-program__item">
+          <label class="form__label form__label--weight" for="weight">Вес (кг):*</label>
+          <input class="form__input" id="weight" name="weight" placeholder="7">
         </div>
-        <div class="selection-program__age">
-          <label class="form__label" for="age">Возраст (лет):</label>
-          <input class="form__input" id="age" name="age">
+        <div class="selection-program__item">
+          <label class="form__label form__label--age" for="age">Возраст (лет):</label>
+          <input class="form__input" id="age" name="age" placeholder="7">
         </div>
       </fieldset>
 
@@ -93,32 +94,43 @@
           </li>
         </ul>
       </fieldset>
+    </div>
+
       <fieldset class="contact-details">
         <legend class="contact-details__legend">
-          Контактные данные (владельца кота)
+          <div class="green-line-left"></div>
+          <span class="contact-detail__title">Контактные данные (владельца кота)</span>
+          <div class="green-line"></div>
         </legend>
         <ul class="contact-details__list">
-          <li class="contact-details__email">
-            <label class="form__label" for="email">E-mail:*</label>
-            <input class="form__input" type="email" name="email" id="email">
+          <li class="contact-details__item contact-details__item--email">
+            <label class="form__label form__label--email" for="email" >E-mail:*</label>
+            <input class="form__input" type="email" name="email" id="email" placeholder="KUKLACHEV@GMAIL.COM">
           </li>
-          <li class="contact-details__tel">
-            <label class="form__label" for="tel">Телефон:*</label>
-            <input class="form__input" type="tel" name="tel" id="tel">
+          <li class="contact-details__item contact-details__item--tel">
+            <label class="form__label form__label--tel" for="tel">Телефон:*</label>
+            <input class="form__input" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90">
           </li>
         </ul>
       </fieldset>
 
       <fieldset class="comment">
+        <div class="comment__wrapper">
         <legend class="comment__legend">
-          Комментарий
+          <div class="green-line-left"></div>
+          <span class="comment__title">Комментарий</span>
+          <div class="green-line"></div>
         </legend>
         <label class="visually-hidden" for="comment">Комментарий о коте:</label>
         <textarea class="comment__textarea" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+      </div>
       </fieldset>
+
       <fieldset class="extra">
         <legend class="extra__legend">
-          Дополнительно
+          <div class="green-line-left"></div>
+          <span class="extra__title">Дополнительно</span>
+          <div class="green-line"></div>
         </legend>
         <ul class="extra__list">
           <li class="extra__item">
@@ -142,67 +154,70 @@
             <label class="extra__label" for="vitamins">Витамины</label>
           </li>
         </ul>
+        <div class="form__button-wrapper">
+          <button class="form__button form__button--active" type="submit">Отправить заявку</button>
+          <span class="form__reminder">* — Обязательные поля</span>
+        </div>
       </fieldset>
-      <button class="form__button form__button--active" type="submit">Отправить заявку</button>
-      <span class="form__reminder">* — Обязательные поля</span>
     </form>
-
+  </main>
 
     <footer class="page-footer">
 
       <section class="map">
 
-      <section class="partnership">
-        <h2 class="partnership__title">
-          Приглашаем к сотрудничеству дилеров!
-        </h2>
-        <p class="partnership__adress">
-          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-        </p>
-      </section>
+        <section class="partnership">
+          <h2 class="partnership__title">
+            Приглашаем к сотрудничеству дилеров!
+          </h2>
+          <p class="partnership__adress">
+            ул. Большая Конюшенная, д. 19/8 <br>
+            <br>Санкт-Петербург
+          </p>
+        </section>
 
         <h2 class="visually-hidden">Местоположение на карте</h2>
       </section>
 
-    <div class="page-footer__wrapper">
-      <div class="page-footer__section">
-      <a class="page-footer__logo" href="#">
-        <img class="page-footer_logo-img" src="img/footer-logo-2.png" width="128" height="24"
-          alt="Логотип Кэт Енерджи">
-      </a>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__section">
+          <a class="page-footer__logo" href="#">
+            <img class="page-footer_logo-img" src="img/footer-logo-2.png" width="128" height="24"
+              alt="Логотип Кэт Енерджи">
+          </a>
 
-      <div class="social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <img class="social__img" src="img/icon-vkontakte.svg" width="23" height="16" alt="Вконтакте">
+          <div class="social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img class="social__img social__img--vk" src="img/icon-vkontakte.svg" width="23" height="16" alt="Вконтакте">
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img class="social__img social__img--insta" src="img/icon-instagram.svg" width="16" height="16" alt="Инстаграмм">
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img class="social__img social__img--fb" src="img/icon-facebook.svg" width="22" height="22" alt="Фейсбук">
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="copyright">
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              HTML Academy
             </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <img class="social__img" src="img/icon-instagram.svg" width="16" height="16" alt="Инстаграмм">
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <img src="img/icon-copy.png" width="27" height="34" alt="Копирайт">
             </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <img class="social__img" src="img/icon-facebook.svg" width="22" height="22" alt="Фейсбук">
-            </a>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
+    </footer>
 
-      <div class="copyright">
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        HTML Academy
-      </a>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <img src="img/icon-copy.png" width="27" height="34" alt="Копирайт">
-      </a>
-    </div>
-    </div>
-  </div>
-  </footer>
-  </main>
 
 
   <script>
