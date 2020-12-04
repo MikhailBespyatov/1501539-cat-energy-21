@@ -44,6 +44,7 @@
 
   @media (min-width: @tablet-width) {
     display: block;
+    margin-right: 80px;
 
     padding-top: 24px;
 
@@ -143,7 +144,7 @@
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    width: 438px;
+    width: 500px;
 
     display: flex;
     justify-content: start;
@@ -157,9 +158,12 @@
 
 .main-nav__item {
   @media (min-width: @tablet-width) {
-    &--catalog {
-      margin-right: 35px;
+    margin-right: 35px;
+
+    &:last-child {
+      margin-right: 0;
     }
+
     &--active {
       border-bottom: 2px solid @basic-green;
     }
@@ -189,7 +193,6 @@
   color: @black;
 
   @media (min-width: @tablet-width) {
-    width: 154px;
     font-size: 18px;
     line-height: 24px;
     font-weight: normal;
