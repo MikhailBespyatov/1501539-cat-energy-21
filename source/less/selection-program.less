@@ -1,0 +1,230 @@
+.selectiom-program__wrapper {
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+}
+
+.selection-program {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+  padding-bottom: 14px;
+  margin-bottom: 22px;
+  border: none;
+  border-bottom: 1px solid @grey-border;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    padding: 0 30px;
+    border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+    margin: 0;
+  }
+}
+
+.selection-program__item {
+  margin-bottom: 13px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    width: 628px;
+    padding-left: 40px;
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+    padding-left: 0;
+  }
+}
+
+.selection-program__legend {
+  padding: 0;
+  margin: 0;
+  padding-top: 27px;
+  margin-bottom: 37px;
+
+  font-family: "Oswald", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+  color: @black;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 62px;
+    margin-bottom: 54px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 73px;
+    margin-bottom: 56px;
+  }
+}
+
+.selection-program__action {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 39px;
+  width: 226px;
+
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @black;
+
+  @media (min-width: @tablet-width) {
+    width: 323px;
+    margin-bottom: 66px;
+    padding-left: 40px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+  }
+}
+
+.weight-control {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  border: none;
+  border-bottom: 1px solid @grey-border;
+
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+    margin: 0;
+    padding-top: 314px;
+  }
+}
+
+.weight-control__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-bottom: 25px;
+  height: 115px;
+
+  @media (min-width: @tablet-width) {
+    width: 628px;
+    height: 200px;
+    padding-top: 25px;
+    padding-left: 27px;
+    margin-left: 40px;
+    border: 1px solid @special_dark-grey-2;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+    margin-left: 0;
+    box-sizing: border-box;
+  }
+}
+
+.weight-control__item {
+  position: relative;
+  padding-left: 45px;
+  padding-bottom: 19px;
+  padding-top: 4px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 60px;
+    padding-bottom: 18px;
+  }
+}
+
+.weight-control__label {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @special_dark-grey-3;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.weight-control__radio+label {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+    border: 1px solid @special-grey-2;
+    box-sizing: border-box;
+
+    @media (min-width: @tablet-width) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 40px;
+      height: 40px;
+
+      border-radius: 50%;
+      border: 1px solid @special-grey-2;
+      box-sizing: border-box;
+    }
+  }
+}
+
+.weight-control__radio:checked+label {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+
+    background-image: url(../img/radiobutton-active.svg);
+    background-repeat: no-repeat;
+    background-position: 7px 7px;
+    border-radius: 50%;
+    border: 1px solid @special-grey-2;
+    box-sizing: border-box;
+
+    @media (min-width: @tablet-width) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 40px;
+      height: 40px;
+
+      background-image: url(../img/radiobutton-active-tablet.svg);
+      background-repeat: no-repeat;
+      background-position: 9px 10px;
+      border-radius: 50%;
+      border: 1px solid @special-grey-2;
+      box-sizing: border-box;
+    }
+  }
+}

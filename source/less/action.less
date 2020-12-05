@@ -1,0 +1,106 @@
+.action {
+  background: url(../img/action-food.png) no-repeat 40% calc(100% - 43px),
+    url(../img/action-green-back.png) no-repeat 40% 0,
+    url(../img/action-cat.png) no-repeat 40% 0;
+
+  min-height: 480px;
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    min-height: 872px;
+    width: 708px;
+    padding: 0 30px;
+    background: url(../img/action-background-tablet.png) no-repeat 25% 85%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    padding: 0 110px;
+    background: url(../img/action-background-desktop.png) no-repeat 65% 10%;
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+  .desktop-green-cat-wrapper {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 640px;
+    height: 694px;
+    z-index: -1;
+
+    background: url(../img/green-cat-desktop.png) no-repeat 0 0,
+      url(../img/action-cat-desktop.png) no-repeat 0 0;
+  }
+}
+
+.action__wrapper {
+  min-height: 480px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+}
+
+.action__title {
+  margin: 0;
+  padding: 0;
+  padding-top: 24px;
+
+  font-family: "Oswald", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+
+  color: @white;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    color: @black;
+
+    padding-left: 87px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 87px;
+    padding-left: 80px;
+  }
+}
+
+.action__text {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: @white;
+
+  padding-top: 10px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: @black;
+
+    padding-top: 20px;
+    margin-left: -10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 40px;
+  }
+}
