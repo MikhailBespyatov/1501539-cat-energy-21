@@ -1,11 +1,22 @@
 .action {
-  background: url(../img/action-food.png) no-repeat 40% calc(100% - 43px),
-    url(../img/action-green-back.png) no-repeat 40% 0,
-    url(../img/action-cat.png) no-repeat 40% 0;
+  position: relative;
 
-  min-height: 480px;
-  width: 320px;
-  margin: 0 auto;
+  background-size: cover;
+
+  padding-bottom: 177px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 42px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 280px;
+    height: 270px;
+    background: url(../img/action-food.png) no-repeat 0 0;
+    background-size: cover;
+  }
 
   @media (min-width: @tablet-width) {
     min-height: 872px;
@@ -52,10 +63,23 @@
   }
 }
 
+.action__text-wrapper {
+  display: block;
+  width: 100%;
+
+  background: url(../img/action-green-back.png) 40% 0 no-repeat,
+    url(../img/action-cat.png) no-repeat 40% 0;
+  background-size: cover;
+  z-index: -1;
+  padding-bottom: 164px;
+}
+
 .action__title {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  padding-top: 24px;
+  margin-bottom: 16px;
+  padding-top: 26px;
+  width: 249px;
 
   font-family: "Oswald", Arial, sans-serif;
   font-style: normal;
@@ -103,4 +127,17 @@
   @media (min-width: @desktop-width) {
     padding-top: 40px;
   }
+}
+
+.action__button-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.action__button {
+  width: 100%;
 }
