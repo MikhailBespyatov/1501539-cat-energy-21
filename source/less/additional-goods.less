@@ -1,6 +1,5 @@
 .additional-goods {
-  width: 320px;
-  margin: 0 auto;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     width: 768px;
@@ -12,17 +11,17 @@
 }
 
 .additional-goods__title {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
+
   font-family: "Oswald", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
   color: @black;
-  margin-left: 20px;
-
-  display: grid;
-  grid-template-columns: 226px 53px;
-  gap: 22px;
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
@@ -49,10 +48,9 @@
 }
 
 .additional-goods__list {
-  margin: 0;
+  margin: 0 23px;
   padding: 0;
   list-style: none;
-  padding: 0 20px;
   margin-bottom: 39px;
 
   @media (min-width: @tablet-width) {
@@ -72,7 +70,8 @@
 }
 
 .additional-goods__item {
-  padding-bottom: 19px;
+  padding-top: 14px;
+  padding-bottom: 16px;
   border-bottom: 1px solid @special-grey-2;
 
   &--first {
@@ -116,6 +115,10 @@
 }
 
 .additional-goods__item-title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 11px;
+
   font-family: "Oswald", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -131,12 +134,13 @@
 }
 
 .additional-goods__table {
-  width: 280px;
+  width: 100%;
   margin-bottom: 15px;
   font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 14px;
   color: @special_dark-grey;
+  border-spacing: 0;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;

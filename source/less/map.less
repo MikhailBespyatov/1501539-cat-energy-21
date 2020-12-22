@@ -1,45 +1,32 @@
 .map {
   position: relative;
 
-  min-height: 476px;
-  width: 320px;
-  margin: 0 auto;
-
-  background: url(../img/map.png) no-repeat 0 114px;
-
-  @media (min-width: @tablet-width) {
-    min-height: 601px;
-    width: 768px;
-
-    background: url(../img/map-tablet.png) no-repeat 0 201px;
-  }
-
   @media (min-width: @desktop-width) {
     min-height: 400px;
     min-width: 1440px;
 
     background: url(../img/map-desktop.png) no-repeat 0 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/map-desktop@2x.png);
+      background-size: cover;
+    }
   }
 }
 
 .partnership {
-  background-color: @white;
-  box-sizing: border-box;
 
-  width: 280px;
-  margin: 0 auto;
-  height: 114px;
-
+  background-color: #ffffff;
+  margin: 0px 22px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding-top: 12px;
+  padding-bottom: 10px;
 
   @media (min-width: @tablet-width) {
-    width: 708px;
-    padding: 0 30px;
-    height: 201px;
-
-    justify-content: space-between;
+    margin: 0 71px;
+    height: 179px;
+    align-items: center;
   }
 
   @media (min-width: @desktop-width) {
@@ -60,17 +47,19 @@
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
   text-transform: uppercase;
   color: @light-black;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
-    line-height: 21px;
+    line-height: 26px;
+    width: 165px;
   }
 }
 
 .partnership__adress {
+  padding-top: 3px;
   width: 140px;
   font-family: Arial, sans-serif;
   font-size: 14px;
@@ -80,14 +69,36 @@
   br {
     display: none;
   }
+
   @media (min-width: @tablet-width) {
     width: 159px;
     font-size: 16px;
     line-height: 20px;
     text-align: right;
+    margin-right: 6px;
 
     br {
       display: block;
+    }
+  }
+}
+
+.map__img {
+  min-height: 362px;
+
+  background: url(../img/map.png) no-repeat 50% 50%;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(../img/map@2x.png);
+  }
+
+  @media (min-width: @tablet-width) {
+    min-height: 400px;
+    background-image: url(../img/map-tablet.png);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/map-tablet@2x.png);
     }
   }
 }

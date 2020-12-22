@@ -1,25 +1,22 @@
 .page-footer__wrapper {
   background-color: @basic-grey;
-  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 50px;
+    padding-top: 15px;
+  }
 }
 
 .page-footer__section {
-  margin: 0 auto;
-  min-height: 236px;
-  box-sizing: border-box;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+  margin: 0 22px;
+  padding-top: 39px;
 
   @media (min-width: @tablet-width) {
-    min-height: 150px;
-    width: 708px;
-
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+
+    margin: 0 30px;
   }
 
   @media (min-width: @desktop-width) {
@@ -29,13 +26,20 @@
 }
 
 .page-footer__logo {
-  padding-top: 20px;
+  display: block;
+  text-align: center;
+  margin-bottom: 26px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .social {
-  width: 280px;
+  width: 100%;
   padding-top: 20px;
-  padding-bottom: 21px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
   border-top: 1px solid @grey-border-3;
   border-bottom: 1px solid @grey-border-3;
 
@@ -44,6 +48,9 @@
 
   @media (min-width: @tablet-width) {
     border: none;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -51,16 +58,16 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  width: 130px;
-  height: 22px;
+  width: 47%;
+  margin-bottom: 3px;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   @media (min-width: @tablet-width) {
-    width: 129px;
-    height: 33px;
+    width: 31%;
+    margin-right: -25px;
   }
 }
 
@@ -84,15 +91,19 @@
 }
 
 .copyright {
-  width: 280px;
+  width: 100%;
   height: 34px;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 20px;
 
   @media (min-width: @tablet-width) {
-    width: 163px;
+    padding-bottom: 0;
+    width: 39%;
+    margin-top: -9px;
+    margin-right: 6px;
   }
 }
 
@@ -102,4 +113,13 @@
   line-height: 18px;
   color: @special_dark-grey;
   text-decoration: none;
+}
+
+.copyright__link-img {
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 6px;
+  }
+
 }

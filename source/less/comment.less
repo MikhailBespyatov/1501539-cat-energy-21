@@ -1,11 +1,11 @@
 .comment {
-  width: 320px;
-  margin: 0 auto;
   border: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 18px;
 
   @media (min-width: @tablet-width) {
-    width: 768px;
-    margin-bottom: 65px;
+    margin-bottom: 60px;
   }
 
   @media (min-width: @desktop-width) {
@@ -14,7 +14,7 @@
 }
 
 .comment__legend {
-  margin-left: 20px;
+  position: relative;
   margin-bottom: 37px;
 
   font-family: "Oswald", Arial, sans-serif;
@@ -24,20 +24,12 @@
   line-height: 26px;
   color: @black;
 
-  display: grid;
-  grid-template-columns: 121px 158px;
-  gap: 20px;
 
   @media (min-width: @tablet-width) {
     margin-left: 0;
     margin-bottom: 76px;
     font-size: 36px;
     line-height: 36px;
-
-    display: grid;
-    grid-template-columns: 30px 182px 478px;
-    gap: 40px;
-    align-items: center;
   }
 
   @media (min-width: @desktop-width) {
@@ -46,11 +38,11 @@
 }
 
 .comment__textarea {
-  width: 280px;
+  width: 86.5%;
   height: 150px;
-  margin-left: 20px;
-  padding-left: 15px;
-  padding-top: 9px;
+  margin: 0px 23px;
+  padding-left: 14px;
+  padding-top: 10px;
   border: 1px solid @special_dark-grey-2;
 
   font-family: "Oswald", Arial, sans-serif;
@@ -60,11 +52,16 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @special_dark-grey;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    width: 631px;
-    height: 174px;
     margin-left: 70px;
+    margin: 0 70px;
+    width: 81.5%;
+    height: 174px;
+    padding-left: 18px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   @media (min-width: @desktop-width) {

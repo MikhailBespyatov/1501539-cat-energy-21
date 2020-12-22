@@ -11,19 +11,42 @@
   }
 
   &--weight {
-    width: 97px;
+    width: 107px;
+    ;
   }
 
   &--age {
-    width: 160px;
+    width: 184px;
   }
 
   &--email {
-    width: 82px;
+    width: 80px;
   }
 
   &--tel {
-    width: 97px;
+    width: 110px;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: -12px;
+
+    &--name {
+      width: 70px;
+    }
+
+    &--weight {
+      width: 111px;
+    }
+
+    &--age {
+      width: 171px;
+    }
+
+    &--email {
+      width: 93px;
+    }
   }
 }
 
@@ -41,8 +64,19 @@
   line-height: 18px;
   color: @special_dark-grey;
 
+  &--contact {
+    margin-top: 7px;
+  }
+
   @media (min-width: @tablet-width) {
     height: 52px;
+    padding-left: 18px;
+    padding-top: 4px;
+
+    &--contact {
+      margin-top: 0;
+      padding-left: 21px;
+    }
   }
 }
 
@@ -52,23 +86,26 @@
   line-height: 16px;
   color: @black;
 
-  display: flex;
-  justify-content: center;
+  display: block;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
+    margin-left: -23px;
+    margin-top: -5px;
+
     font-size: 16px;
     line-height: 16px;
-    }
+  }
 }
 
 .form__button-wrapper {
   @media (min-width: @tablet-width) {
-    width: 523px;
-    display: grid;
-    grid-template-columns: 282px 180px;
-    gap: 161px;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    margin-left: -15px;
+
+    margin-left: -14px;
+    margin-right: 179px;
   }
 
   @media (min-width: @desktop-width) {
@@ -76,5 +113,63 @@
     grid-template-columns: 568px 180px;
     margin-bottom: 82px;
   }
+}
+
+@media (min-width: @tablet-width) {
+
+  input::-moz-placeholder,
+  textarea::-moz-placeholder {
+    font-family: "Oswald", Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #444444;
   }
 
+  input::-webkit-input-placeholder,
+  textarea::-webkit-input-placeholder {
+    font-family: "Oswald", Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #444444;
+  }
+
+  input:-ms-input-placeholder,
+  textarea:-ms-input-placeholder {
+    font-family: "Oswald", Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #444444;
+  }
+
+  input::-ms-input-placeholder,
+  textarea::-ms-input-placeholder {
+    font-family: "Oswald", Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #444444;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    font-family: "Oswald", Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #444444;
+  }
+
+}

@@ -1,5 +1,4 @@
 .choose-button {
-  width: 280px;
   min-height: 40px;
 
   background-color: @basic-green;
@@ -26,14 +25,10 @@
   }
 
   @media (min-width: @tablet-width) {
-    width: 244px;
     min-height: 54px;
 
     font-size: 20px;
-    line-height: 0px;
-
-    margin-left: 113px;
-    margin-top: 49px;
+    line-height: 20px;
   }
 
   @media (min-width: @desktop-width) {
@@ -45,7 +40,6 @@
   position: relative;
   width: 134px;
   height: 24px;
-  margin-left: 19px;
 
   font-family: "Oswald", Arial, sans-serif;
   font-style: normal;
@@ -59,8 +53,8 @@
   &::after {
     content: "";
     position: absolute;
-    top: 7px;
-    right: -40px;
+    top: 5px;
+    right: -47px;
 
     width: 32px;
     height: 10px;
@@ -73,7 +67,7 @@
     width: 161px;
     height: 38px;
     padding-top: 4px;
-    margin-left: 52px;
+    margin-left: 29px;
 
     font-size: 20px;
     line-height: 30px;
@@ -81,8 +75,8 @@
     &::after {
       content: "";
       position: absolute;
-      top: 14px;
-      right: 0;
+      top: 13px;
+      right: -4px;
     }
   }
 
@@ -105,6 +99,8 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    margin-right: 21px;
+    margin-left: 12px;
   }
 }
 
@@ -143,7 +139,7 @@
 }
 
 .catalog-button {
-  width: 280px;
+  width: 100%;
   height: 40px;
 
   background-color: @basic-green;
