@@ -1,7 +1,7 @@
 .catalog-products {
   @media (min-width: @tablet-width) {
-    width: 708px;
-    padding: 0 30px
+    margin: 0 30px;
+    margin-bottom: 43px;
   }
 
   @media (min-width: @desktop-width) {
@@ -23,9 +23,9 @@
   color: @black;
 
   @media (min-width: @tablet-width) {
-    width: 708px;
     padding: 0;
-    padding-top: 64px;
+    padding-top: 52px;
+    margin-left: 30px;
 
     font-size: 60px;
     line-height: 60px;
@@ -45,8 +45,9 @@
 
   @media (min-width: @tablet-width) {
     display: grid;
-    grid-template-columns: 324px 324px;
-    gap: 60px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 18px;
   }
 
   @media (min-width: @desktop-width) {
@@ -75,13 +76,15 @@
   padding-top: 19px;
 
   @media (min-width: @tablet-width) {
-    height: 511px;
-    padding-left: 36px;
-    grid-template-columns: 324px;
-    grid-template-rows: 206px 157px 148px;
-
+    margin: 0;
+    padding: 0;
+    width: 324px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
     background-color: @basic-grey;
-    background-image: linear-gradient(@white 81px, transparent 81px);
+    background-image: linear-gradient(@white 121px, transparent 121px);
     box-sizing: border-box;
   }
 
@@ -94,6 +97,11 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 7px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: column;
+    justify-content: start;
+  }
 }
 
 .catalog-products__text-wrapper {
@@ -106,15 +114,39 @@
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    height: 206px;
+    width: auto;
+    padding-top: 49px;
 
     &--small {
-      padding-top: 28px;
+    margin-bottom: 6px;
     }
 
     &--big {
-      padding-top: 0;
+      margin-bottom: 6px;
     }
+
+    &--big-chicken {
+      margin-bottom: -3px;
+    }
+  }
+}
+
+.catalog-products__img {
+  width: 140px;
+  height: 112px;
+
+  @media (min-width: @tablet-width) {
+      width: 168px;
+      height: 200px;
+
+      &--big-chicken {
+        height: 209px;
+      }
+
+      &-plus {
+        margin-top: 13px;
+        margin-bottom: -4px;
+      }
   }
 }
 
@@ -134,9 +166,11 @@
 
   @media (min-width: @tablet-width) {
     width: 130px;
-    padding-left: 64px;
+    padding-left: 60px;
     padding-top: 24px;
+    margin-bottom: 15px;
     text-align: center;
+
 
     font-size: 20px;
     line-height: 24px;
@@ -165,8 +199,7 @@
   color: @special_dark-grey;
 
   @media (min-width: @tablet-width) {
-    width: 250px;
-    height: 89px;
+    width: 248px;
 
     font-size: 16px;
     line-height: 16px;
@@ -182,6 +215,8 @@
   text-align: left;
 
   @media (min-width: @tablet-width) {
+    padding-top: 7px;
+    padding-bottom: 7px;
     border-bottom: 1px solid @special-grey-2;
   }
 }
@@ -190,13 +225,16 @@
   text-align: right;
 
   @media (min-width: @tablet-width) {
+    padding-top: 7px;
+    padding-bottom: 7px;
     border-bottom: 1px solid @special-grey-2;
   }
 }
 
 .catalog-button__wrapper {
   @media (min-width: @tablet-width) {
-    padding-top: 46px;
+    padding-top: 27px;
+    padding-bottom: 40px;
   }
 }
 
@@ -213,8 +251,10 @@
 
 
   @media (min-width: @tablet-width) {
+    width: 324px;
     height: 429px;
-    margin-top: 81px;
+    margin-left: 0;
+    margin-top: 123px;
     padding-top: 37px;
     border: 2px solid @basic-grey;
     box-sizing: border-box;
@@ -245,6 +285,7 @@
     width: 134px;
     text-align: center;
     text-transform: uppercase;
+    margin-bottom: 23px;
 
     font-size: 20px;
     line-height: 22px;

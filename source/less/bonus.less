@@ -14,18 +14,33 @@
   flex-direction: column;
   align-items: center;
 
-  @media (min-width: @tablet-width) {
-    height: 200px;
-    width: 708px;
-    margin: 0 30px;
-
-    background-image: url(../img/bonus-background-tablet.png);
-
-    flex-direction: row;
-    justify-content: space-around;
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/cat-in-washing-machine@2x.png");
+    background-size: 280 auto;
   }
 
   @media (min-width: @tablet-width) {
+    height: 200px;
+    margin-left: 30px;
+    margin-right: 35px;
+    margin-bottom: 77px;
+    padding-left: 79px;
+    padding-right: 125px;
+
+    background-image: url(../img/bonus-background-tablet.png);
+    background-size: cover;
+
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/bonus-background-tablet@2x.png);
+
+    }
+
+  }
+
+  @media (min-width: @desktop-width) {
     margin: 0;
     margin-left: 72px;
     height: 289px;
@@ -41,6 +56,10 @@
 .bonus__img-wrapper {
   padding-top: 58px;
   margin-bottom: 45px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 46px;
+  }
 }
 
 .bonus__call-buy {
@@ -53,4 +72,9 @@
   line-height: 20px;
   color: @white;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+    margin-top: 4px;
+  }
 }
