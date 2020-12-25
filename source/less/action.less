@@ -20,7 +20,7 @@
   @media (min-width: @tablet-width) {
     min-height: 862px;
     margin: 0 30px;
-    background: url(../img/action-background-tablet.png) no-repeat 0 98%;
+    background: url(../img/action-background-tablet.png) no-repeat 0 100%;
     padding-bottom: 0;
 
 
@@ -35,9 +35,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 1220px;
-    padding: 0 110px;
-    background: url(../img/action-background-desktop.png) no-repeat 65% 10%;
+    min-height: 876px;
+    margin: 0 110px;
+    background: url(../img/action-background-desktop.png) no-repeat 88.5% 5%;
 
     @media (min-resolution: 2dppx) {
       background-image: url(../img/action-background-desktop@2x.png);
@@ -62,6 +62,7 @@
     @media (min-resolution: 2dppx) {
       background-image: url(../img/green-cat-desktop@2x.png),
       url(../img/action-cat-desktop@2x.png);
+      background-size: 1440px auto;
     }
   }
 }
@@ -133,7 +134,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 87px;
+    padding-top: 100px;
     padding-left: 80px;
   }
 }
@@ -160,7 +161,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 40px;
+    padding-top: 18px;
+    margin-left: 80px;
   }
 }
 
@@ -177,7 +179,10 @@
     padding: 0;
     top: 281px;
     left: 82px;
+  }
 
+  @media (min-width: @desktop-width) {
+    left: 80px;
   }
 }
 

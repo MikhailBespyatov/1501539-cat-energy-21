@@ -82,6 +82,31 @@
 
   @media (min-width: @desktop-width) {
     width: 168px;
+    margin-left: 52px;
+
+    &--slim::after {
+      content: "";
+      position: absolute;
+      top: 13px;
+      right: 0;
+
+      width: 32px;
+      height: 10px;
+
+      background: url(../img/right-arrow.svg) no-repeat 0 0;
+    }
+
+    &--pro::after {
+      content: "";
+      position: absolute;
+      top: 13px;
+      right: 6px;
+
+      width: 32px;
+      height: 10px;
+
+      background: url(../img/right-arrow.svg) no-repeat 0 0;
+    }
   }
 }
 
