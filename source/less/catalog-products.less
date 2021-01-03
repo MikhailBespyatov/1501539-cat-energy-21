@@ -6,7 +6,8 @@
 
   @media (min-width: @desktop-width) {
     width: 1220px;
-    padding: 0 110px;
+    margin: 0 110px;
+    margin-bottom: 51px;
   }
 }
 
@@ -32,9 +33,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 1220px;
-    padding: 0 110px;
-    padding-top: 74px;
+    margin: 0 110px;
+    padding-top: 66px;
+    margin-bottom: 34px;
   }
 }
 
@@ -53,7 +54,7 @@
   @media (min-width: @desktop-width) {
     grid-template-columns: repeat(4, 245px);
     column-gap: 80px;
-    row-gap: 63px;
+    row-gap: 14px;
   }
 }
 
@@ -89,7 +90,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: 245px;
+    width: 245px;
   }
 }
 
@@ -129,6 +130,20 @@
       margin-bottom: -3px;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    &--small {
+      margin-bottom: 16px;
+    }
+
+    &--big {
+      margin-bottom: 19px;
+    }
+
+    &--big-chicken {
+      margin-bottom: 13px;
+    }
+  }
 }
 
 .catalog-products__img {
@@ -147,6 +162,20 @@
         margin-top: 13px;
         margin-bottom: -4px;
       }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 172px;
+    height: 200px;
+    margin-right: -4px;
+
+    &--big-chicken {
+      height: 203px;
+    }
+
+    &--big {
+      height: 197px;
+    }
   }
 }
 
@@ -185,7 +214,8 @@
     font-size: 20px;
     line-height: 21px;
 
-    padding-left: 18px;
+    padding-left: 20px;
+    margin-bottom: 19px;
   }
 }
 
@@ -219,6 +249,11 @@
     padding-bottom: 7px;
     border-bottom: 1px solid @special-grey-2;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
 }
 
 .catalog-products__right-cell {
@@ -228,6 +263,11 @@
     padding-top: 7px;
     padding-bottom: 7px;
     border-bottom: 1px solid @special-grey-2;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
 }
 
@@ -258,6 +298,12 @@
     padding-top: 37px;
     border: 2px solid @basic-grey;
     box-sizing: border-box;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+    height: 430px;
+    margin-top: 130px;
   }
 }
 
@@ -290,6 +336,10 @@
     font-size: 20px;
     line-height: 22px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 24px;
+  }
 }
 
 .catalog-products__description {
@@ -308,5 +358,9 @@
     text-align: center;
 
     margin-bottom: 87px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 88px;
   }
 }

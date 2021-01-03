@@ -9,8 +9,10 @@
   }
 
   @media (min-width: @desktop-width) {
+    width: 1440px;
     background-color: @basic-background;
-    background-image: linear-gradient(@white 30%, transparent 30%);
+    background-image: linear-gradient(@white 29%, transparent 30%);
+    padding-bottom: 35px;
   }
 }
 
@@ -22,13 +24,17 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 1220px;
-    padding: 0 110px;
-    min-height: 656px;
+    margin: 0 110px;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+
+.live-example__text-wrapper {
+  @media (min-width: @desktop-width) {
+    margin-right: 163px;
   }
 }
 
@@ -54,7 +60,7 @@
 
   @media (min-width: @desktop-width) {
     padding-top: 58px;
-    margin-bottom: 146px;
+    margin-bottom: 147px;
   }
 }
 
@@ -85,6 +91,10 @@
   @media (min-width: @desktop-width) {
     width: 436px;
     margin-bottom: 69px;
+
+    br {
+      display: none;
+    }
   }
 }
 
@@ -100,6 +110,10 @@
   @media (min-width: @tablet-width) {
     align-items: center;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 32px;
+  }
 }
 
   .live-example__list-wrapper {
@@ -113,6 +127,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 366px;
   }
 }
 
@@ -139,6 +154,10 @@
       background: url(../img/weight-back-tablet-after.svg) no-repeat 0 0;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
+  }
 }
 
 .live-example__number {
@@ -152,6 +171,10 @@
   @media (min-width: @tablet-width) {
     font-size: 30px;
     line-height: 37px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 13px;
   }
 }
 
@@ -199,7 +222,6 @@
     display: flex;
     justify-content: space-between;
     width: 327px;
-    margin-top: 40px;
   }
 }
 
@@ -216,6 +238,16 @@
     @media (min-resolution: 2dppx) {
       background-image: url(../img/image-cat-slider-tablet@2x.png);
       background-size: 1416px auto;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url(../img/slider-cat-desktop.png);
+    background-position: 80% 0%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/slider-cat-desktop@2x.png);
+      background-size: 690px auto;
     }
   }
 }
@@ -242,6 +274,12 @@
 
   @media (min-width: @tablet-width) {
     padding-top: 569px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: auto;
+    margin-left: 35px;
+    padding-top: 572px;
   }
 }
 
