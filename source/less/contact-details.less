@@ -10,6 +10,7 @@
 
   @media (min-width: @desktop-width) {
     width: 1440px;
+    margin-bottom: 48px;
   }
 }
 
@@ -27,7 +28,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
-    padding: 0 110px;
+    margin: 0 111px;
   }
 }
 
@@ -79,6 +80,10 @@
 
   @media (min-width: @desktop-width) {
     width: 570px;
+
+    &--email::after {
+      right: 20px;
+    }
   }
 }
 
@@ -98,9 +103,5 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 76px;
-  }
-
-  @media (min-width: @desktop-width) {
-    grid-template-columns: 70px 512px 778px;
   }
 }

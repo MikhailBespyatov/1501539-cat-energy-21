@@ -53,6 +53,28 @@
       margin-left: -3px;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    &--name {
+      width: 72px;
+    }
+
+    &--weight {
+      width: 115px;
+    }
+
+    &--age {
+      width: 176px;
+    }
+
+    &--email {
+      width: 97px;
+    }
+
+    &--tel {
+      width: 120px;
+    }
+  }
 }
 
 .form__input {
@@ -83,6 +105,12 @@
       padding-left: 21px;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    &--contact {
+      padding-left: 18px;
+    }
+  }
 }
 
 .form__reminder {
@@ -101,6 +129,14 @@
     font-size: 16px;
     line-height: 16px;
   }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+
+    margin-left: -4px;
+    margin-top: 0;
+
+  }
 }
 
 .form__button-wrapper {
@@ -114,9 +150,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 809px;
-    grid-template-columns: 568px 180px;
-    margin-bottom: 82px;
+    justify-content: start;
+    margin-left: 26px;
   }
 }
 
