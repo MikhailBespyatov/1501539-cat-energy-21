@@ -1,14 +1,16 @@
 .contact-details {
-  width: 320px;
-  margin: 0 auto;
   border: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 13px;
 
   @media (min-width: @tablet-width) {
-    width: 768px;
+    margin-bottom: 45px;
   }
 
   @media (min-width: @desktop-width) {
     width: 1440px;
+    margin-bottom: 48px;
   }
 }
 
@@ -19,14 +21,14 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 65px;
-    padding: 0 70px;
+    margin: 0 71px;
   }
 
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
-    padding: 0 110px;
+    margin: 0 111px;
   }
 }
 
@@ -36,12 +38,13 @@
   justify-content: space-between;
   align-items: center;
   height: 45px;
+  margin: 0 22px;
   margin-bottom: 14px;
 
   &--email::after {
     content: "";
     position: absolute;
-    top: 16px;
+    top: 19px;
     right: 15px;
 
     width: 20px;
@@ -61,20 +64,32 @@
   }
 
   @media (min-width: @tablet-width) {
-    width: 628px;
     height: 52px;
+    margin: 0;
     margin-bottom: 20px;
+
+    &--email::after {
+      right: 17px;
+    }
+
+    &--tel::after {
+      top: 15px;
+      right: 17px;
+    }
   }
 
   @media (min-width: @desktop-width) {
     width: 570px;
+
+    &--email::after {
+      right: 20px;
+    }
   }
 }
 
 .contact-details__legend {
-  padding-top: 26px;
-  margin-bottom: 35px;
-  margin-left: 20px;
+  position: relative;
+  margin-bottom: 32px;
   box-sizing: border-box;
 
   font-family: "Oswald", Arial, sans-serif;
@@ -84,24 +99,9 @@
   line-height: 26px;
   color: @black;
 
-  display: grid;
-  grid-template-columns: 199px 99px;
-
   @media (min-width: @tablet-width) {
-    margin-left: 0;
-    margin-bottom: 76px;
-    height: 38px;
-    display: grid;
-    grid-template-columns: 30px 512px 145px;
-    gap: 40px;
-    align-items: center;
-
     font-size: 36px;
     line-height: 36px;
-  }
-
-  @media (min-width: @desktop-width) {
-    grid-template-columns: 70px 512px 778px;
+    margin-bottom: 76px;
   }
 }
-
