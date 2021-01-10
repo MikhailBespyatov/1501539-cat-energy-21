@@ -1,19 +1,26 @@
-.description__wrapper {
-  width: 280px;
-  padding: 0 20px;
-  margin: 0 auto;
-  padding-bottom: 42px;
-
+.description {
   @media (min-width: @tablet-width) {
-    width: 708px;
-    padding: 0 30px;
-    padding-bottom: 47px;
-    border-bottom: 1px solid @grey-border-2;
+    border-bottom: 1px solid #E6E6E6;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1220px;
-    padding: 0 110px;
+    border-bottom: none;
+  }
+}
+
+.description__wrapper {
+  margin: 0 23px;
+  margin-bottom: 42px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 30px;
+    padding-bottom: 37px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 110px;
+    padding: 0;
+    margin-bottom: -29px;
   }
 }
 
@@ -22,34 +29,27 @@
   padding: 0;
   margin: 0;
 
-  height: 300px;
-
-  display: grid;
-  grid-template-rows: repeat(4, 60px);
-  gap: 20px;
-
   @media (min-width: @tablet-width) {
-    height: 540px;
-
     display: grid;
-    grid-template-columns: 250px 250px;
-    grid-template-rows: 250px 250px;
-    column-gap: 130px;
-    row-gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 55px;
+    row-gap: 66px;
   }
 
   @media (min-width: @desktop-width) {
     height: 280px;
-
     display: grid;
     grid-template-columns: repeat(4, 250px);
-    gap: 80px;
+    gap: 75px;
   }
 
 }
 
 .description__title {
-  margin-top: -3px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 38px;
   font-family: "Oswald", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -58,12 +58,13 @@
   color: @black;
 
   @media (min-width: @tablet-width) {
+    margin-bottom: 72px;
     font-size: 60px;
     line-height: 60px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 72px;
+    margin-bottom: 71px;
   }
 }
 
@@ -73,6 +74,9 @@
   font-size: 14px;
   line-height: 18px;
   color: @special_dark-grey;
+
+  min-height: 60px;
+  margin-bottom: 20px;
 
   &::before {
     content: "";
@@ -87,39 +91,41 @@
   }
 
   &--benefit::before {
-    background-image: url(../img/benefit.png);
+    background-image: url(../img/benefit.svg);
   }
 
   &--ease::before {
-    background-image: url(../img/ease.png);
+    background-image: url(../img/ease.svg);
   }
 
   &--few::before {
-     background-image: url(../img/few.png);
+     background-image: url(../img/few.svg);
   }
 
   &--quickly::before {
-    background-image: url(../img/quickly.png);
+    background-image: url(../img/quickly.svg);
   }
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 0;
+    min-height: 250px;
 
     &--benefit {
-      background: url(../img/1.svg) no-repeat 118px 0;
+      background: url(../img/1.svg) no-repeat 49% 0;
     }
 
     &--ease {
-      background: url(../img/2.svg) no-repeat 111px 0;
+      background: url(../img/2.svg) no-repeat 57% 0;
     }
 
     &--few {
-      background: url(../img/3.svg) no-repeat 113px 0;
+      background: url(../img/3.svg) no-repeat 57% 0;
     }
 
     &--quickly {
-      background: url(../img/4.svg) no-repeat 113px 0;
+      background: url(../img/4.svg) no-repeat 59% 0;
     }
 
     &::before {
@@ -130,28 +136,27 @@
 
       width: 80px;
       height: 80px;
+      background-color: @basic-green;
       background-repeat: no-repeat;
       background-position: 10px 10px;
     }
+  }
 
-    &--benefit::before {
-      background-color: @basic-green;
-      background-image: url(../img/quickly.png);
+  @media (min-width: @desktop-width) {
+    &--benefit {
+      background: url(../img/1.svg) no-repeat 70% 0;
     }
 
-    &--ease::before {
-      background-color: @basic-green;
-      background-image: url(../img/quickly.png);
+    &--ease {
+      background: url(../img/2.svg) no-repeat 89% 0;
     }
 
-    &--few::before {
-      background-color: @basic-green;
-      background-image: url(../img/quickly.png);
+    &--few {
+      background: url(../img/3.svg) no-repeat 90% 0;
     }
 
-    &--quickly::before {
-      background-color: @basic-green;
-      background-image: url(../img/quickly.png);
+    &--quickly {
+      background: url(../img/4.svg) no-repeat 97% 0;
     }
   }
 }
@@ -159,13 +164,21 @@
 .description__text {
   padding: 0;
   margin: 0;
+  padding-top: 3px;
   display: block;
-  width: 198px;
   padding-left: 80px;
+
+  br {
+    display: none;
+  }
 
   @media (min-width: @tablet-width) {
     width: 250px;
     padding-left: 0;
-    padding-top: 110px;
+    padding-top: 113px;
+
+    br {
+      display: block;
+    }
   }
 }
