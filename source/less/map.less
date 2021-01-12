@@ -3,7 +3,6 @@
 }
 
 .partnership {
-
   background-color: #ffffff;
   margin: 0px 22px;
   display: flex;
@@ -18,8 +17,9 @@
   }
 
   @media (min-width: @desktop-width) {
+    margin: 0;
     position: absolute;
-    left: 39px;
+    left: 8.7%;
     top: 97px;
     padding-left: 76px;
     padding-right: 89px;
@@ -72,6 +72,7 @@
   @media (min-width: @desktop-width) {
     text-align: left;
     margin-right: -4px;
+    padding-top: 0;
   }
 }
 
@@ -95,10 +96,10 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 1440px;
     height: 400px;
 
     background: url(../img/map-desktop.png) no-repeat 0 0;
+    background-size: cover;
 
     @media (min-resolution: 2dppx) {
       background-image: url(../img/map-desktop@2x.png);

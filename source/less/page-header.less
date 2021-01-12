@@ -12,7 +12,7 @@
 
   @media (min-width: @desktop-width) {
     width: 1220px;
-    margin: 0;
+    margin: 0 auto;
     padding: 0 110px;
     padding-top: 26px;
   }
@@ -23,7 +23,7 @@
   height: 65px;
 }
 
-.page-header__logo-mobile {
+.page-header__logo {
   position: absolute;
   left: 50%;
   width: 190px;
@@ -35,15 +35,19 @@
   margin-left: -140px;
 
   @media (min-width: @tablet-width) {
-    display: none;
+    margin-left: 0;
+    padding: 0;
   }
 }
 
-.page-header__logo-tablet {
-  display: none;
+.page-header__logo-icon {
+  width: 33px;
+  height: 37px;
 
   @media (min-width: @tablet-width) {
     display: block;
+    width: 174px;
+    height: 66px;
 
     &:hover {
       opacity: 0.8;
@@ -52,19 +56,13 @@
     &:active {
       opacity: 0.6;
     }
-
   }
 
-  @media (min-width: @desktop-width) {
-    display: none;
-  }
-}
-
-.page-header__logo-desktop {
-  display: none;
 
   @media (min-width: @desktop-width) {
     display: block;
+    width: 202px;
+    height: 59px;
 
     &:hover {
       opacity: 0.8;
@@ -74,10 +72,9 @@
       opacity: 0.6;
     }
 
-    padding-top: 11px;
+    padding-top: 12px;
   }
 }
-
 
 .main-nav {
   position: relative;
@@ -152,6 +149,7 @@
 
   @media (min-width: @desktop-width) {
     margin-right: 0;
+    margin-top: 15px;
   }
 }
 
@@ -236,6 +234,12 @@
   }
 }
 
+
+.page-header__logo-name {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
 
 .main-nav__link--white {
   @media (min-width: @desktop-width) {
