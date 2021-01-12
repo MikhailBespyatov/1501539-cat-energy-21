@@ -237,24 +237,82 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url(../img/image-cat-slider-tablet@2x.png);
-      background-size: 1416px auto;
+      background-size: 677px auto;
+    }
+
+    &--before {
+      background: url(../img/before-cat-tablet.png) no-repeat 45% 20%;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url(../img/before-cat-tablet@2x.png);
+        background-size: 677px auto;
+      }
+    }
+
+    &--after {
+      background: url(../img/after-cat-tablet.png) no-repeat 65% 20%;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url(../img/after-cat-tablet@2x.png);
+        background-size: 677px auto;
+      }
     }
   }
 
   @media (min-width: @desktop-width) {
     background-image: url(../img/slider-cat-desktop.png);
-    background-position: 80% 0%;
+    background-position: 93% 0%;
 
     @media (min-resolution: 2dppx) {
       background-image: url(../img/slider-cat-desktop@2x.png);
       background-size: 690px auto;
     }
+
+    &--before {
+      background: url(../img/before-cat-tablet.png) no-repeat 157% 2%;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url(../img/before-cat-tablet@2x.png);
+        background-size: 677px auto;
+      }
+    }
+
+    &--after {
+      background: url(../img/after-cat-tablet.png) no-repeat 56% 2%;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url(../img/after-cat-tablet@2x.png);
+        background-size: 677px auto;
+      }
+    }
   }
 }
 
-.slider__img {
-  margin-bottom: 23px;
-  margin-left: -11px;
+.slider__img-mobile {
+  width: 311px;
+  height: 240px;
+
+  &--before {
+    background-image: url(../img/before-cat.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/before-cat@2x.png);
+      background-size: 311px 232px;
+    }
+  }
+
+  &--after {
+    background-image: url(../img/after-cat.png);
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/after-cat@2x.png);
+      background-size: 251px 240px;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -310,6 +368,7 @@
     display: block;
     width: 428px;
     height: 34px;
+    margin-right: 3px;
   }
 }
 
@@ -328,10 +387,18 @@
     display: block;
     position: absolute;
     top: -2px;
-    left: 193px;
+    left: 50%;
     width: 38px;
     height: 38px;
     background: url(../img/slider-control.svg) no-repeat 0 0;
-  }
+    transform: translate(-50%);
 
+    &--before {
+      left: 0;
+    }
+
+    &--after {
+      left: 100%;
+    }
+  }
 }
