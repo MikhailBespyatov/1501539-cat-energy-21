@@ -156,15 +156,15 @@
                 </div>
 
                 <div class="slider">
-                    <img class="slider__img" src="img/before-cat.png" width="311" height="232" alt="Фото кота до похудeния">
+                    <div class="slider__img-mobile slider__img-mobile--before"></div>
                     <div class="slider__buttons">
-                        <button class="button-slider" type="button">Было</button>
+                        <button class="button-slider button-slider--before" type="button">Было</button>
                         <button class="slider__toggle slider__toggle--before" type="button"></button>
                         <div class="slider__range-control">
                             <div class="slider__scale"></div>
                             <div class="slider__control"></div>
                         </div>
-                        <button class="button-slider" type="button">Стало</button>
+                        <button class="button-slider button-slider--after" type="button">Стало</button>
                     </div>
                 </div>
             </div>
@@ -226,6 +226,9 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/slider.js"></script>
+    <script src="js/slider-tablet.js"></script>
 
     <script>
         var navMain = document.querySelector('.main-nav');
