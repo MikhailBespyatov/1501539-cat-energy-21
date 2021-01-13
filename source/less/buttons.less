@@ -50,6 +50,14 @@
   text-transform: uppercase;
   color: @black;
 
+  &:hover::after {
+    background: url(../img/arrow-hover.svg) no-repeat 0 0;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -111,6 +119,7 @@
 }
 
 .button-slider {
+  position: relative;
   font-family: "Oswald", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -122,11 +131,57 @@
   color: @black;
   cursor: pointer;
 
+  &::after {
+    content: "";
+    position: absolute;
+    top: 23px;
+    left: 5px;
+    width: 41px;
+    height: 1px;
+
+    background-image: url(../img/dotted.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  &:hover::after {
+    background-image: none;
+    background-color: @black;
+  }
+
+  &:active {
+    background: none;
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
     margin-right: 21px;
     margin-left: 12px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 31px;
+      left: 7px;
+
+      width: 47px;
+      height: 1px;
+
+      background-image: url(../img/dotted.svg);
+      background-position: 0 0;
+      background-repeat: no-repeat;
+    }
+
+    &:hover::after {
+      background-image: none;
+      background-color: @black;
+    }
+
+    &:active {
+      background: none;
+    }
+
   }
 }
 
@@ -212,4 +267,12 @@
 .catalog-button--grey {
   background-color: @basic-grey;
   color: @special_dark-grey;
+
+  &:hover {
+    background-color: @special-grey;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

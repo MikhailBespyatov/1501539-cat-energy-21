@@ -205,6 +205,15 @@
       top: -2px;
     }
   }
+
+  &:hover::before {
+    border: 1px solid @special_dark-grey-4;
+  }
+}
+
+
+.weight-control__radio:disabled+label {
+  opacity: 0.3;
 }
 
 .weight-control__radio:checked+label {
@@ -242,4 +251,12 @@
       top: -2px;
     }
   }
+
+  &:hover::before {
+    border: 1px solid @special_dark-grey-4;
+  }
+}
+
+.weight-control__radio:checked:disabled+label {
+  opacity: 0.3;
 }
