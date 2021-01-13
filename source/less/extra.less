@@ -123,6 +123,14 @@
       top: -2px;
     }
   }
+
+  &:hover::before {
+    border: 1px solid @special_dark-grey-4;
+  }
+}
+
+.extra__checkbox:disabled+label {
+  opacity: 0.3;
 }
 
 .extra__checkbox:checked+label {
@@ -159,4 +167,11 @@
       top: -2px;
     }
   }
+  &:hover::before {
+    border: 1px solid @special_dark-grey-4;
+  }
+}
+
+.extra__checkbox:checked:disabled+label {
+  opacity: 0.3;
 }
