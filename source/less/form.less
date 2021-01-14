@@ -78,11 +78,13 @@
 }
 
 .form__input {
+  position: relative;
   width: 100%;
   height: 45px;
   padding-left: 15px;
   border: 1px solid @special_dark-grey-2;
   box-sizing: border-box;
+  background: none;
 
   font-family: "Oswald", Arial, sans-serif;
   font-style: normal;
@@ -90,6 +92,7 @@
   font-size: 16px;
   line-height: 18px;
   color: @special_dark-grey;
+  z-index: 10;
 
   &--contact {
     margin-top: 7px;
@@ -99,12 +102,16 @@
     border: 1px solid @special_dark-grey;
   }
 
+  &:disabled:hover {
+    border: 2px solid @special_dark-grey;
+  }
+
   &:focus {
     border: 2px solid @special_dark-grey;
   }
 
   &--status-error {
-    border: 2px solid @status_error;
+    border: 2px solid @status-error;
   }
 
   @media (min-width: @tablet-width) {
@@ -123,6 +130,53 @@
       padding-left: 18px;
     }
   }
+}
+
+.form__input-icon {
+  position: absolute;
+  z-index: 1;
+
+  &--email {
+    top: 19px;
+    right: 15px;
+    width: 20px;
+    height: 14px;
+    stroke: @special_dark-grey-3;
+  }
+
+  &--tel {
+    top: 13px;
+    right: 12px;
+    width: 20px;
+    height: 21px;
+    fill: @special_dark-grey-3;
+  }
+}
+
+.form__input--status-error + .form__input-icon--email {
+  stroke: @status-error;
+}
+
+
+.form__input--status-error:hover {
+  border: 2px solid @status-error;
+}
+
+.form__input:disabled {
+  border: 2px solid @special_dark-grey;
+}
+
+.form__input:disabled+.form__input-icon--email {
+  stroke: @basic-green;
+}
+
+.form__input:disabled+.form__input-icon--tel {
+  fill: @basic-green;
+}
+
+
+.form__input--status-error+.form__input-icon--tel {
+  fill: @status-error;
 }
 
 .form__reminder {
