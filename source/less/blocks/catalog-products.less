@@ -1,44 +1,16 @@
 .catalog-products {
+  margin-bottom: 25px;
+
   @media (min-width: @tablet-width) {
     margin: 0 30px;
-    margin-bottom: 43px;
+    margin-bottom: 67px;
   }
 
   @media (min-width: @desktop-width) {
     width: 1220px;
     margin: 0 auto;
     padding: 0 110px;
-    margin-bottom: 50px;
-  }
-}
-
-.catalog-title {
-  margin: 0 20px;
-  padding-top: 29px;
-  margin-bottom: 41px;
-
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 36px;
-  color: @black;
-
-  @media (min-width: @tablet-width) {
-    padding: 0;
-    padding-top: 52px;
-    margin-left: 30px;
-
-    font-size: 60px;
-    line-height: 60px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 1220px;
-    margin: 0 auto;
-    padding: 0 110px;
-    padding-top: 66px;
-    margin-bottom: 34px;
+    margin-bottom: 75px;
   }
 }
 
@@ -51,13 +23,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
-    row-gap: 18px;
+    row-gap: 17px;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: repeat(4, 245px);
     column-gap: 80px;
-    row-gap: 14px;
+    row-gap: 13px;
   }
 }
 
@@ -75,8 +47,8 @@
 
 
 .catalog-products__item {
-  margin: 0 22px;
-  padding-bottom: 25px;
+  margin: 0 20px;
+  padding-bottom: 24px;
   padding-top: 19px;
 
   @media (min-width: @tablet-width) {
@@ -110,6 +82,7 @@
 
 .catalog-products__text-wrapper {
   width: 50%;
+  padding-top: 2px;
 }
 
 .catalog-products__img-wrapper {
@@ -136,15 +109,15 @@
 
   @media (min-width: @desktop-width) {
     &--small {
-      margin-bottom: 16px;
+      margin-bottom: 14px;
     }
 
     &--big {
-      margin-bottom: 19px;
+      margin-bottom: 17px;
     }
 
     &--big-chicken {
-      margin-bottom: 13px;
+      margin-bottom: 11px;
     }
   }
 }
@@ -194,7 +167,8 @@
 .catalog-products__title {
   margin: 0;
   padding: 0;
-  margin-bottom: 11px;
+  margin-bottom: 12px;
+  width: 100px;
 
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -208,7 +182,7 @@
     width: 130px;
     padding-left: 60px;
     padding-top: 24px;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
     text-align: center;
 
 
@@ -236,7 +210,7 @@
 
   font-family: "Arial", sans-serif;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 14px;
   color: @special_dark-grey;
 
   @media (min-width: @tablet-width) {
@@ -293,7 +267,6 @@
   margin: 0 22px;
   padding-top: 24px;
   padding-bottom: 23px;
-  margin-bottom: 25px;
 
   display: flex;
   flex-direction: column;
