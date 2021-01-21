@@ -1,0 +1,159 @@
+.weight-control {
+  margin: 0;
+  padding: 0;
+  padding-top: 22px;
+  margin-bottom: 25px;
+  border: none;
+  border-bottom: 1px solid @grey-border;
+  border-top: 1px solid @grey-border;
+
+
+  @media (min-width: @tablet-width) {
+    border: none;
+    margin: 0;
+    margin-left: 71px;
+    margin-right: 67px;
+    padding-top: 0;
+    margin-bottom: 75px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+    margin: 0;
+    padding-top: 306px;
+  }
+}
+
+.weight-control__list {
+  margin: 0 20px;
+  padding: 0;
+  list-style: none;
+  padding-bottom: 5px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 25px;
+    padding-left: 28px;
+    margin: 0;
+    border: 1px solid @special_dark-grey-2;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+    margin-left: 0;
+    padding-top: 26px;
+    padding-left: 27px;
+    padding-bottom: 9px;
+    box-sizing: border-box;
+  }
+}
+
+.weight-control__item {
+  position: relative;
+  padding-left: 45px;
+  margin-bottom: 15px;
+  padding-top: 4px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 60px;
+    margin-bottom: 19px;
+  }
+}
+
+.weight-control__label {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @special_dark-grey-3;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.weight-control__radio + label {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+    border: 1px solid @special-grey-2;
+    box-sizing: border-box;
+
+    @media (min-width: @tablet-width) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 40px;
+      height: 40px;
+
+      border-radius: 50%;
+      border: 1px solid @special-grey-2;
+      box-sizing: border-box;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: -2px;
+    }
+  }
+
+  &:hover::before {
+    border: 1px solid @special_dark-grey-4;
+  }
+}
+
+
+.weight-control__radio:disabled + label {
+  opacity: 0.3;
+}
+
+.weight-control__radio:checked + label {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+
+    background-image: url("../img/radiobutton-active.svg");
+    background-repeat: no-repeat;
+    background-position: 7px 7px;
+    border-radius: 50%;
+    border: 1px solid @special-grey-2;
+    box-sizing: border-box;
+
+    @media (min-width: @tablet-width) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 40px;
+      height: 40px;
+
+      background-image: url("../img/radiobutton-active-tablet.svg");
+      background-repeat: no-repeat;
+      background-position: 9px 10px;
+      border-radius: 50%;
+      border: 1px solid @special-grey-2;
+      box-sizing: border-box;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: -2px;
+    }
+  }
+
+  &:hover::before {
+    border: 1px solid @special_dark-grey-4;
+  }
+}
+
+.weight-control__radio:checked:disabled + label {
+  opacity: 0.3;
+}

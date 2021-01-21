@@ -33,14 +33,13 @@
 }
 
 .additional-goods__list {
-  margin: 0 23px;
+  margin: 0 20px;
   padding: 0;
   list-style: none;
   margin-bottom: 39px;
 
   @media (min-width: @tablet-width) {
-    margin-left: 30px;
-    margin-right: 35px;
+    margin: 0 30px;
     margin-bottom: 68px;
     padding: 0;
 
@@ -57,7 +56,7 @@
 
 .additional-goods__item {
   padding-top: 14px;
-  padding-bottom: 16px;
+  padding-bottom: 17px;
   border-bottom: 1px solid @special-grey-2;
 
   &--first {
@@ -98,7 +97,7 @@
 .additional-goods__text-wrapper {
   @media (min-width: @tablet-width) {
     margin: 0 37px;
-    margin-bottom: 7px;
+    margin-bottom: 9px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -132,7 +131,7 @@
 
 .additional-goods__table {
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
@@ -182,8 +181,14 @@
 }
 
 .additional-goods__button-wrapper {
+  @media (min-width: @tablet-width) {
+    padding-left: 35px;
+    padding-right: 39px;
+  }
+
   @media (min-width: @desktop-width) {
     margin: 0;
+    padding: 0;
     width: 245px;
     align-self: center;
   }
