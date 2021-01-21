@@ -2,6 +2,14 @@
   position: relative;
 }
 
+.partnership__wrapper {
+  background-color: @basic-grey;
+
+  @media (min-width: @desktop-width) {
+    background-color: transparent;
+  }
+}
+
 .partnership {
   background-color: #ffffff;
   margin: 0 19px;
@@ -9,11 +17,12 @@
   justify-content: space-between;
   padding-top: 12px;
   padding-bottom: 10px;
+  background-color: transparent;
 
   @media (min-width: @tablet-width) {
     margin: 0 71px;
     padding-top: 12px;
-    height: 179px;
+    min-height: 179px;
     align-items: center;
   }
 
@@ -25,7 +34,7 @@
     padding-left: 76px;
     padding-right: 89px;
     width: 405px;
-    height: 180px;
+    min-height: 180px;
   }
 }
 
