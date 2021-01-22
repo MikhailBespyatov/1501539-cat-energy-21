@@ -63,10 +63,10 @@ exports.createWebp = createWebp;
 // sprite
 
 const sprite = () => {
-  return gulp.src("source/img/icons/*.svg")
-    .pipe(svgstore({ inlineSvg: true }))
-    .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img/icons"))
+    return gulp.src("source/img/icons/*.svg")
+        .pipe(svgstore({ inlineSvg: true }))
+        .pipe(rename("sprite.svg"))
+        .pipe(gulp.dest("build/img/icons"))
 }
 exports.sprite = sprite;
 
@@ -85,7 +85,7 @@ exports.html = html;
 
 const scripts = () => {
     return gulp.src("source/js/script.js")
-    	.pipe(gulp.dest("build/js"))
+        .pipe(gulp.dest("build/js"))
         .pipe(uglify())
         .pipe(rename("script.min.js"))
         .pipe(gulp.dest("build/js"))
@@ -121,7 +121,7 @@ const clean = () => {
 const server = (done) => {
     sync.init({
         server: {
-            baseDir: 'build'
+            baseDir: "build"
         },
         cors: true,
         notify: false,
