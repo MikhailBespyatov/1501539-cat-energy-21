@@ -26,7 +26,7 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/action-background-tablet@2x.jpg");
-      background-size: 1416px auto;
+      background-size: 709px 609px;
     }
 
     &::after {
@@ -43,7 +43,8 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/action-background-desktop@2x.png");
-      background-size: cover;
+      background-size: 552px 499px;
+      z-index: -1;
     }
   }
 }
@@ -70,13 +71,15 @@
 
   background: url("../img/action-green-back.png") 40% 0 no-repeat,
     url("../img/action-cat.png") no-repeat 40% 0;
+  background-color: @basic-green;
   background-size: cover;
   z-index: -1;
   padding-bottom: 164px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/action-green-back@2x.png"),
-      url("../img/action-cat@2x.png");
+    background: url("../img/action-green-back.png") 40% 0 no-repeat,
+      url("../img/action-cat@2x.png") 40% 0 no-repeat;
+    background-size: cover;
   }
 
   @media (min-width: @tablet-width) {
